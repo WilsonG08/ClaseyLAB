@@ -1,0 +1,40 @@
+.contenedor{
+    border: 5px solid rebeccapurple;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+        "header header header"
+        "side main main"
+        "side main main";
+    place-content: center;
+}
+
+.item{
+    font-size: 2rem;
+}
+
+.item-1{
+    border: 5px solid salmon;
+    background-color: blueviolet;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-area: header;
+}
+
+
+.item-2{
+    border: 5px solid rgb(172, 44, 30);
+    background-color: rgb(248, 101, 16);
+    /* grid-row: 2/4; */
+    /* esot es una area */
+    grid-area: side;
+}
+
+.item-3{
+    border: 5px solid rgb(123, 236, 16);
+    background-color: rgb(148, 8, 94);
+    /* grid-area: 2/2/4/4; */
+    grid-area: main;
+}
